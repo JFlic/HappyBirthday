@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltorb Flip - Prize Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="prize-container">
+        <div class="prize-header">
+            <h1>Prize Shop</h1>
+            <div class="coins-display">Your Coins: <span id="available-coins">0</span></div>
+            <a href="index.html" class="back-button">Back to Game</a>
+        </div>
+        <div class="prizes-grid">
+            <div class="prize-card">
+                <img src="images/highfive.jpg" alt="High Five">
+                <h3>High Five</h3>
+                <p>50 coins</p>
+                <button onclick="purchasePrize('High Five', 50)">Purchase</button>
+            </div>
+            <div class="prize-card">
+                <img src="images/coffee.jpg" alt="Coffee">
+                <h3>Free Coffee</h3>
+                <p>300 coins</p>
+                <button onclick="purchasePrize('Coffee', 300)">Purchase</button>
+            </div>
+            <div class="prize-card">
+                <img src="images/walking.jpg" alt="Walking">
+                <h3>Walking</h3>
+                <p>400 coins</p>
+                <button onclick="purchasePrize('Walking', 400)">Purchase</button>
+            </div>
+            <div class="prize-card">
+                <img src="images/DinnerDate.png" alt="Dinner Date">
+                <h3>Dinner Date</h3>
+                <p>1500 coins</p>
+                <button onclick="purchasePrize('DinnerDate', 1000)">Purchase</button>
+            </div>
+            <div class="prize-card">
+                <img src="images/taylor.jpg" alt="Taylor">
+                <h3>Taylor Swift Tickets</h3>
+                <p>3000 coins</p>
+                <button onclick="purchasePrize('Taylor Swift Tickets', 3000)">Purchase</button>
+            </div>
+        </div>
+        <div class="inventory">
+            <h2>Your Prizes</h2>
+            <div id="prize-inventory"></div>
+        </div>
+    </div>
+    <script src="prizes.js"></script>
+</body>
+</html> 
